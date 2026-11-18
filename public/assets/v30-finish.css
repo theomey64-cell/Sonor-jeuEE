@@ -1,0 +1,30 @@
+/* SONORIA V30 — art direction premium, responsive, no functional changes */
+:root{--v30-gold:#ffe4a3;--v30-lilac:#c37aff;--v30-night:#0d0619}
+html{scroll-behavior:smooth}body{background:radial-gradient(ellipse 75% 50% at 48% -8%,#54208a88,transparent 72%),radial-gradient(ellipse 40% 50% at 100% 50%,#3b145e70,transparent 78%),#0d0619!important;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.26;background-image:radial-gradient(#f7dca8 0.8px,transparent 1.4px),radial-gradient(#a65fff 1px,transparent 1.8px);background-size:75px 75px,127px 127px;background-position:10px 20px,50px 70px;mask-image:linear-gradient(to bottom,#000,transparent 96%)}
+main{position:relative;z-index:1;max-width:1220px!important;padding-inline:clamp(16px,3vw,38px)!important}
+main>header{padding:13px 20px!important;margin:8px 0 24px!important;border:1px solid #b67cf477;border-radius:22px;background:linear-gradient(125deg,#26113ad9,#170a2ce8);box-shadow:0 12px 35px #0006,inset 0 1px #fff3;backdrop-filter:blur(14px)}
+.logo img{width:clamp(130px,15vw,200px)!important;max-height:85px!important;object-fit:contain;filter:drop-shadow(0 3px 10px #d367ff77)}
+.studio-hero{min-height:470px!important;gap:20px!important;padding:clamp(24px,4vw,54px)!important;border-radius:34px!important;background:radial-gradient(ellipse at 80% 50%,#7c2bc13b,transparent 50%),linear-gradient(125deg,#35164de9,#14091fe8)!important;border:1px solid #e4b4ff99!important;box-shadow:0 22px 70px #000a,inset 0 1px #fff4,0 0 50px #9b48ed1e!important}
+.studio-copy h1{font-size:clamp(44px,5.9vw,85px)!important;line-height:.96!important;filter:drop-shadow(0 9px 10px #0007)}
+.studio-copy p{max-width:500px;line-height:1.7!important;font-size:clamp(14px,1.3vw,17px)!important}
+.studio-hero::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:linear-gradient(120deg,#fff2,transparent 22%,transparent 80%,#c27aff12)}
+.sonor-home::before{right:-7%!important;top:85px!important;width:min(43vw,530px)!important;opacity:.8!important;filter:drop-shadow(0 30px 25px #0009) drop-shadow(0 0 32px #b34dff44)!important;animation:sonoriaFloat 6s ease-in-out infinite}
+@keyframes sonoriaFloat{0%,100%{transform:translateY(0) rotate(4deg)}50%{transform:translateY(-14px) rotate(6deg)}}
+.studio-dashboard{margin-top:28px!important}.dashboard-title{margin-bottom:18px!important}.dashboard-title h2{font-size:clamp(27px,3vw,43px)!important;line-height:1.08;text-shadow:0 3px 0 #773aa1,0 8px 16px #0008!important}
+.studio-layout{gap:20px!important}.studio-profile,.room-action,.mode-explainer{border-radius:26px!important;border:1px solid #b57be599!important;background:linear-gradient(145deg,#41205ae8,#190b2be9)!important;box-shadow:inset 0 1px #fff3,0 18px 45px #0007!important;position:relative;overflow:hidden}
+.studio-profile:before,.room-action:before,.mode-explainer:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,#fff1,transparent 34%,transparent 75%,#c66aff12)}
+.studio-profile,.room-action,.mode-explainer{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease!important}
+.room-action:hover,.mode-explainer:hover{transform:translateY(-5px)!important;border-color:#f7d598!important;box-shadow:inset 0 1px #fff5,0 24px 48px #0009,0 0 30px #bd5bff33!important}
+.room-icon{box-shadow:0 8px 22px #b456ef66,inset 0 2px #fff7!important;transform:rotate(-5deg)}
+.room-main h3{font-size:clamp(20px,2.1vw,29px)!important;text-shadow:0 4px 13px #0008}
+.room-fields input,.room-fields select,input,select,textarea{border-color:#a16bcc99!important;box-shadow:inset 0 2px 10px #0005!important;transition:border-color .2s,box-shadow .2s!important}
+input:focus,select:focus,textarea:focus{outline:2px solid #dfb0ff!important;outline-offset:2px;border-color:#f1cf96!important}
+button,.studio-primary{border-radius:13px!important;box-shadow:inset 0 2px #fff8,0 5px 0 #5c2778,0 12px 24px #0007!important;transition:transform .18s,filter .18s,box-shadow .18s!important}
+button:not(:disabled):hover,.studio-primary:hover{transform:translateY(-3px)!important;filter:brightness(1.13)}button:not(:disabled):active{transform:translateY(2px)!important;box-shadow:inset 0 1px #fff6,0 2px 0 #5c2778,0 5px 14px #0007!important}
+button:focus-visible,a:focus-visible{outline:3px solid #ffdf98!important;outline-offset:4px}
+.mode-explainer{min-height:100%;padding-bottom:20px}.profile-avatar img{filter:drop-shadow(0 7px 15px #0008)}
+.revstudio-credit{margin-top:28px!important;border-top:1px solid #a575cc33;padding-top:22px!important}
+@media(max-width:900px){.sonor-home::before{opacity:.3!important;width:50vw!important;right:-9%!important}.studio-hero{min-height:400px!important}.studio-layout{grid-template-columns:1fr!important}.studio-rooms{min-width:0}}
+@media(max-width:620px){main{padding-inline:13px!important}main>header{padding:12px!important;gap:10px!important}.studio-hero{padding:26px 20px!important;min-height:390px!important}.studio-copy h1{font-size:clamp(40px,10vw,58px)!important}.sonor-home::before{width:78vw!important;top:125px!important;right:-26%!important;opacity:.2!important}.room-action,.studio-profile,.mode-explainer{padding:19px!important}.room-fields{flex-wrap:wrap!important}.room-fields input,.room-fields select,.room-fields button{min-width:0;max-width:100%}.dashboard-title h2{font-size:30px!important}}
+@media(prefers-reduced-motion:reduce){.sonor-home::before{animation:none!important}html{scroll-behavior:auto}}
